@@ -12,9 +12,6 @@ import (
 //go:embed all:frontend/dist
 var assets embed.FS
 
-//go:embed build/appicon.png
-var icon []byte
-
 func main() {
 	// Create an instance of the app structure
 	app := NewApp()
@@ -36,8 +33,7 @@ func main() {
 				Icon:    icon,
 			},
 		},
-		OnStartup: app.startup,
-		Bind: []interface{}{
+		Oind: []interface{}{
 			app,
 		},
 	})

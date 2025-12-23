@@ -19,7 +19,8 @@ vendor/
 go.work
 
 # Build output
-build/
+build/bin/
+build/darwin/
 dist/
 
 # Frontend dependencies and build
