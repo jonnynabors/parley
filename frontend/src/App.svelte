@@ -71,13 +71,25 @@
   $: if (response && !error) {
     formatJSON()
   }
+
+  function handleKeydown(e) {
+    // Cmd+Enter (Mac) or Ctrl+Enter (Windows/Linux) to send request
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+      e.preventDefault()
+      if (url && !loading) {
+        sendRequest()
+      }
+    }
+  }
 </script>
+
+<svelte:window on:keydown={handleKeydown} />
 
 <main>
   <div class="container">
     <header>
       <h1>🎯 Parley</h1>
-      <p>HTTP Client</p>
+      <p>HTTP Client <span class="hint">• Cmd+Enter to send</span></p>
     </header>
 
     <div class="request-panel">
@@ -183,6 +195,11 @@
     margin: 5px 0 0 0;
     color: #888;
     font-size: 14px;
+  }
+
+  .hint {
+    color: #666;
+    font-size: 12px;
   }
 
   .request-panel {
