@@ -1,0 +1,23 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "parley",
+  "outputfilename": "parley",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "http://localhost:34115",
+  "author": {
+    "name": "jonnynabors",
+    "email": "jonnynabors@gmail.com"
+  },
+  "info": {
+    "companyName": "",
+    "productName": "Parley",
+    "productVersion": "0.0.1",
+    "copyright": "Copyright © 2025",
+    "comments": "HTTP/GraphQL Client"
+  },
+  "nsisType": "multiple",
+  "obfuscated": false,
+  "garbleargs": ""
+}
