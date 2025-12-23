@@ -39,9 +39,6 @@ frontend/wailsjs/
 .DS_Store
 Thumbs.db
 
-# Wails
-wails.json
-
 # Local files
 GO_HTTP_CLIENT_OUTLINE.md
 AGENTS.md
