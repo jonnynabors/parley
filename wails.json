@@ -13,7 +13,7 @@
   "info": {
     "companyName": "",
     "productName": "Parley",
-    "productVersion": "0.0.1",
+    "productVersion": "0.0.2",
     "copyright": "Copyright © 2025",
     "comments": "HTTP/GraphQL Client"
   },
